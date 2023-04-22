@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>confesanos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/estilo.css" />
+    <script src="js/modal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/be92800978.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="logoNombre">
+      <!--hasta 520px esta responsive-->
+      <img class="nombre" src="imgyvector/tittle.svg" alt="" />
+      <img class="logo" src="imgyvector/ojo.svg" alt="" />
+    </div>
+    <div class="bienvenida">
+      <strong>
+        <h1>COONFESANOS LO QUE QUIERAS</h1>
+      </strong>
+    </div>
+    <div class="descripcion">
+      <h2>
+        ¡Saludos, confesores! En esta página no somos terapeutas ni psicólogos,
+        pero podemos asegurarte que después de compartir tu secreto, te sentirás
+        un poco mejor (aunque quizás también un poco más avergonzado).
+        ¡Bienvenidos!
+      </h2>
+    </div>
+    <button class="boton" onclick="openModal()">confesarme</button>
+    <div class="modal-background" id="modal-background">
+      <div class="modal">
+        <span class="close-button" onclick="closeModal()"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <!-- Contenido del modal -->
+        <h2 class="datos">seleciona tus datos</h2>
+        <div class="generoDiv">
+          <label for="hombre">
+            <input type="radio" name="genero" id="hombre"><h4 class="sexo">hombre</h4>
+          </label>
+          
+          <label for="mujer">
+            <input type="radio" name="genero" id="mujer"><h4 class="sexo">mujer</h4>
+          </label>
+          
+          <label for="edad">
+            <input type="number" name="edad" id="edad"><h4 class="sexo">edad</h4>
+          </label>
+        </div>
+        <strong><p class="escribi-tu-confesion">escribi tu confesion abajo</p></strong>
+        <div class="cuadro">
+          <input type="text" name="confesion" id="confesion" />
+        </div>
+        
+        <!-- Botón para cerrar el modal -->
+      </div>
+    </div>
+    <div class="divDiablo">
+      <img class="diablo" src="imgyvector/diablito 2.svg" alt="" />
+    </div>
+    <div class="divAngel">
+      <img class="angel" src="imgyvector/angelito 1.svg" alt="" />
+    </div>
+    <footer>
+      <div>
+        <img class="fueguito" src="imgyvector/fueguito.svg" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>
